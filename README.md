@@ -17,3 +17,13 @@
 - Implement HighCharts
 - Ajax API Call Used
 - PostgreSQL Database
+
+## MyBatis-Spring-REST
+- Annotation Configuration
+- XML Configuration
+- Handled API Error
+- Logback Implemented
+- API Testing Using RESTAssured
+- Database Integration Using PostgreSQL
+- MyBatis Integration
+- CRUD Support

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.github.ashim.mappers.StudentMapper">
+
+	<resultMap id="result" type="com.github.ashim.model.Student">
+		<result property="id" column="id" />
+		<result property="firstName" column="firstName" />
+		<result property="lastName" column="lastName" />
+		<result property="userName" column="userName" />
+		<result property="password" column="password" />
+		<result property="dateOfBirth" column="dateOfBirth" />
+		<result property="emailAddress" column="emailAddress" />
+	</resultMap>
+
+	<select id="getAllStudent" resultMap="result">
+		SELECT *
+		FROM student
+	</select>
+	
+	<select id="getStudent" resultMap="result"
+		parameterType="int">
+		SELECT *
+		FROM student WHERE id = #{id}
+	</select>
+	
+	<select id="getStudentByUserName" resultMap="result"
+		parameterType="String">
+		SELECT ID as id, USERNAME as userName, PASSWORD as password,
+		FIRSTNAME as firstName, LASTNAME as lastName,
+		DATEOFBIRTH as dateOfBirth, EMAILADDRESS as emailAddress
+		FROM student WHERE userName = #{userName}
+	</select>
+
+</mapper>
