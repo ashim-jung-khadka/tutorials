@@ -12,7 +12,7 @@
 hs_err_pid*
 
 # mac
-.DS_Store
-Desktop.ini
+*/.DS_Store
+*/Desktop.ini
 
-target/
+*/target/
