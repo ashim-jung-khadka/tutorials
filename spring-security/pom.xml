@@ -227,6 +227,9 @@
 				<configuration>
 					<!-- <systemPropertiesFile>${project.basedir}/${project.artifactId}/src/test/resources/system.properties</systemPropertiesFile> -->
 					<encoding>${project.build.sourceEncoding}</encoding>
+					<includes>
+						<include>**/IT*Test.java</include>
+					</includes>
 				</configuration>
 				<executions>
 					<!-- States that both integration-test and verify goals of the Failsafe 
