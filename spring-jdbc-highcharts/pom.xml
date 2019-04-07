@@ -21,7 +21,7 @@
 
 		<cglib.version>2.2.2</cglib.version>
 
-		<spring.version>3.2.4.RELEASE</spring.version>
+		<spring.version>4.3.17.RELEASE</spring.version>
 
 		<maven.copy.plugin.version>0.2.3</maven.copy.plugin.version>
 		<maven.compiler.plugin.version>2.3.2</maven.compiler.plugin.version>

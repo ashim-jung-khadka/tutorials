@@ -27,3 +27,13 @@
 - Database Integration Using PostgreSQL
 - MyBatis Integration
 - CRUD Support
+
+## Design Pattern
+- Observer Pattern
+- Strategy Pattern
+
+## Spring Rest Docs
+- Provides spring rest api documentation
+
+## Spring Security
+- Spring security with cors implementation
